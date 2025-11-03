@@ -1,5 +1,5 @@
-import { defineConfig } from "cypress";
-import { users } from "./users"; // keep only non-secret defaults
+import { defineConfig } from 'cypress';
+import { users } from './users'; // keep only non-secret defaults
 
 export default defineConfig({
   e2e: {
@@ -9,5 +9,7 @@ export default defineConfig({
       return config;
     },
     video: true,
+    viewportWidth: 1280,
   },
 });
+
